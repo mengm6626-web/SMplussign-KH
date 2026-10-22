@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Kantumruy+Pro:wght@300;400;500;600;700&display=swap');
+
+/* Base Body Styles */
+body {
+    background-color: #080b11;
+    color: #e2e8f0;
+    font-family: 'Kantumruy Pro', 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Glassmorphism Panels */
+.glass-panel {
+    background: rgba(18, 23, 34, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-gold {
+    background: rgba(26, 21, 10, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(234, 179, 8, 0.25);
+}
+
+/* Gold Gradient Text */
+.gold-gradient-text {
+    background: linear-gradient(135deg, #fef08a 0%, #eab308 50%, #ca8a04 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Cyber Border Accents */
+.cyber-border {
+    position: relative;
+}
+
+.cyber-border::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    border-bottom: 2px solid #eab308;
+    border-right: 2px solid #eab308;
+}
+
+/* Custom Styled Scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0d14;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ca8a04;
+}
+
+/* Selection Styles */
+::selection {
+    background-color: #eab308;
+    color: #000000;
+}
